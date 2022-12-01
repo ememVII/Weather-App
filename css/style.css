@@ -1,0 +1,192 @@
+:root {
+    --main-color: #009AD8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h3,h4,span {
+    font-weight: 400;
+}
+
+img {
+    width: 70px;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Start Navbar */
+.navbar .logo {
+    display: flex;
+}
+.navbar .logo-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.navbar .logo-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.navbar .logo-content span {
+    font-size: 14px;
+}
+
+.navbar li a {
+    font-weight: 500 !important;
+    margin-left: 15px;
+    padding: 5px 20px !important;
+    transition: 0.7s ease;
+}
+
+.navbar li a.active {
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+}
+
+.navbar li .nav-link:hover {
+    color: var(--main-color) !important;
+}
+/* End Navbar */
+.weather-app {
+    min-height: 100vh;
+    background-image: url(../images/patchyrain.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-app::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position: relative;
+    min-width: 80vw;
+}
+
+.search-bar {
+    margin-bottom: 3em;
+}
+
+.search-bar input {
+    height: 50px;
+    width: 40em;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.search-bar input:focus {
+    outline: 0;
+}
+
+.temp-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.temp-cards .weather-card {
+    background-color: rgba(50, 51, 69, 0.3);
+    margin: 0 10px;
+    width: calc(100% /3);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* #todayCard, #tomorrowCard, #afterTomorrowCard {
+    background-image: url(../images/rainy.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
+.temp-cards .weather-card .card-top {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+}
+
+.temp-cards .weather-card .card-top h3 {
+    font-size: 18px;
+}
+
+.temp-cards .weather-card .card-content {
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+.temp-cards .weather-card .card-content h3 {
+    font-size: 28px;
+    margin: 0.5em 0;
+}
+
+.temp-cards .weather-card .card-content h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.temp-cards .weather-card .card-content p {
+    font-size: 18px;
+    margin: 0.5em 0;
+    padding: 20px 0;
+}
+
+.temp-cards .weather-card .card-content .details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tempCelsius {
+    display: flex;
+    justify-content: center;
+}
+/* Start Footer */
+.footerlinks li svg {
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    transition: 0.7s ease;
+}
+
+.footerlinks li svg:hover {
+    color: var(--main-color);
+}
+
+.sub-btn {
+    background-color: var(--main-color);
+    border: none;
+}
+/* End Footer */
